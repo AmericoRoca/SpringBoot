@@ -6,11 +6,25 @@ public class Usuario {
 	private String apellido;
 	private String email;
 	
+	//Contructor
+	public Usuario() {
+
+	}
 	
+	public Usuario(String nombre, String apellido, String email) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+	}
+	//End constructor
+	
+
 	//Getter and Setter
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

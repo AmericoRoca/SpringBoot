@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>VARIABLES - VER</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<hr>
+<h1 th:text="${titulo}" class="color rojo"></h1>
+<h2 class="color-azul">Texto de prueba para estilos</h2>
+<ul>
+<li><a th:href="@{/variables/string/}+ 'Hola Americo'">/variables/string/Hola Americo</a></li>
+<li><a th:href="@{/variables/string/}+ 'Hola Chiclana'">/variables/string/Hola Chiclana</a></li>
+<li><a th:href="@{/variables/string/}+ 'Hola Americo' + '/'+32">/variables/string/Hola Americo/32</a></li>
+
+</ul>
+
+
+</body> 
+</html>
